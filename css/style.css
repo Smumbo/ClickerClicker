@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    color: #ffffff;
+    background-color: #191919;
+
+    width: 100%;
+    height: 100%;
+
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.flex-container {
+    white-space: nowrap;
+    display: flex;
+    height: 100%;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+.game-title {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 28px;
+
+    background-color: #4c4c4c;
+}
+
+.game-totals {
+    background-color: #000000;
+    height: 2.5em;
+    padding: 0.5em;
+}
+
+.total {
+    display: inline-block;
+}
+
+#total-time {
+    left: 0;
+}
+
+#total-clicks {
+    text-align: right;
+    float: right;
+}
+
+#game1 {
+    border-right-style: dotted;
+    border-right-color:#b8b8b8;
+    border-right-width: 1px;
+}
+
+.tab-bar {
+    display: flex;
+    float: bottom;
+    background-color: #4c4c4c;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+
+    cursor: pointer;
+    
+    padding: 1em;
+
+    font-size: 22px;
+}
+
+#game2-tabs {
+    color: #ffffff5e;
+}
+
+#game2-tabs > .tab {
+    cursor: unset;
+}
