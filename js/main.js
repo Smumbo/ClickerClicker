@@ -1,3 +1,7 @@
+// General variables
+var totalClicks = 0;
+var totalClicksElement;
+
 // Timer variables
 var hoursLabel;
 var minutesLabel;
@@ -5,7 +9,9 @@ var secondsLabel;
 var totalSeconds = 0;
 
 // Game 1 variables
+var button1;
 var money1 = 0;
+var money1Element;
 
 // Main
 document.addEventListener('DOMContentLoaded', function() {
@@ -40,14 +46,17 @@ function pad(val) {
 }
 
 function makeButton1() {
-    var button1 = document.getElementById("button1");
+    button1 = document.getElementById("button1");
+    money1Element = document.getElementById("money1");
+    totalClicksElement = document.getElementById("clicks");
 
     button1.addEventListener('click', function() {
+        // Update total clicks
+        totalClicks += 1;
+        totalClicksElement.innerHTML = totalClicks;
+
+        // Update money
         money1 += 1;
-
-        console.log("Adding to total...");
-
-        var total1 = document.getElementById("total1");
-        total1.innerHTML = money1;
+        money1Element.innerHTML = money1;
     });
 }
