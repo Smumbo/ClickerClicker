@@ -45,16 +45,22 @@ html, body {
 
 .game-totals {
     background-color: #000000;
-    height: 2.5em;
+    height: auto;
     padding: 0.5em;
+
+    text-align: center;
 }
 
 .total {
     display: inline-block;
 }
 
+#cps {
+    float: left;
+}
+
 #total-time {
-    left: 0;
+    text-align: center;
 }
 
 #total-clicks {
