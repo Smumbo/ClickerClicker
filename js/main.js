@@ -1,8 +1,8 @@
 // General variables
 var totalClicks = 0;
 var totalClicksElement;
-var clicksPerSecond = 0;
-var clicksPerSecondElement;
+var currCPS = 0;
+var currCPSElement;
 
 // Timer variables
 var hoursLabel;
@@ -17,7 +17,6 @@ var money1Element;
 
 // Main
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("Loading scripts...");
     makeCPS();
     makeTimer();
     makeTotalClicks();
@@ -25,14 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function makeCPS() {
-    clicksPerSecondElement = document.getElementById("cps");
+    currCPSElement = document.getElementById("cps");
 
     setInterval(setCPS, 1000);
 }
 
 function setCPS() {
-    clicksPerSecondElement.innerHTML = clicksPerSecond;
-    clicksPerSecond = 0;
+    currCPSElement.innerHTML = currCPS + " CPS";
+    currCPS = 0;
 }
 
 function makeTimer() {
@@ -78,6 +77,6 @@ function makeButton1() {
         money1Element.innerHTML = money1;
 
         // Update CPS
-        clicksPerSecond += 1;
+        currCPS += 1;
     });
 }
