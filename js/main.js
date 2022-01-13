@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function makeCPS() {
     clicksPerSecondElement = document.getElementById("cps");
 
-    setInterval(resetCPS, 1000);
+    setInterval(setCPS, 1000);
 }
 
-function resetCPS() {
+function setCPS() {
     clicksPerSecondElement.innerHTML = clicksPerSecond;
     clicksPerSecond = 0;
 }
