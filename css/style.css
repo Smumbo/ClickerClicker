@@ -98,3 +98,19 @@ html, body {
 #game2-tabs > .tab {
     cursor: unset;
 }
+
+#click-area-1 {
+    padding: 10%;
+}
+
+#button1 {
+    display: block;
+    margin: auto;
+    padding: 10%;
+}
+
+#money1 {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
