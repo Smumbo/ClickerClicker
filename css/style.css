@@ -107,10 +107,14 @@ html, body {
     display: block;
     margin: auto;
     padding: 10%;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 #money1 {
     text-align: center;
-    display: block;
-    margin: auto;
+}
+
+#money2 {
+    text-align: center;
 }
