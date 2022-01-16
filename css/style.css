@@ -109,6 +109,8 @@ html, body {
     padding: 10%;
     background-color: #000000;
     color: #ffffff;
+    border-radius: 100%;
+    border-style: solid;
 }
 
 #money1 {
