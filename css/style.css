@@ -120,3 +120,11 @@ html, body {
 #money2 {
     text-align: center;
 }
+
+#shop-area-1 {
+    display: none;
+}
+
+#stories-area-1 {
+    display: none;
+}
